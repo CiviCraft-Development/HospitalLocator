@@ -1,0 +1,14 @@
+name: HospitalLocator
+version: '1.0'
+main: net.civicraft.hospitalLocator.HospitalLocator
+api-version: '1.21'
+commands:
+  hospital:
+    description: Manage hospital locations.
+    usage: "/hospital <add|delete> <name>"
+    permission: hospital.manage
+    permission-message: "You do not have permission to use this command."
+permissions:
+  hospital.manage:
+    description: Allows players to manage hospital locations.
+    default: op
